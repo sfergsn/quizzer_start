@@ -1,0 +1,116 @@
+
+> tasks@0.1.0 test
+> react-scripts test --coverage
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+FAIL src/quizzer/Quizzer.test.tsx
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /home/runner/work/quizzer_start/quizzer_start/node_modules/react-bootstrap/esm/Button.js:1
+    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,jest){import classNames from 'classnames';
+                                                                                      ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      3 |
+      4 | import "./QuestionEdit.css";
+    > 5 | import Button from "react-bootstrap/esm/Button";
+        | ^
+      6 | import { Form } from "react-bootstrap";
+      7 |
+      8 | export const QuestionEdit = ({
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
+      at Object.<anonymous> (src/quizzer/QuestionEdit.tsx:5:1)
+
+FAIL src/App.test.tsx
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /home/runner/work/quizzer_start/quizzer_start/node_modules/react-bootstrap/esm/Button.js:1
+    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,jest){import classNames from 'classnames';
+                                                                                      ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      3 |
+      4 | import "./QuestionEdit.css";
+    > 5 | import Button from "react-bootstrap/esm/Button";
+        | ^
+      6 | import { Form } from "react-bootstrap";
+      7 |
+      8 | export const QuestionEdit = ({
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
+      at Object.<anonymous> (src/quizzer/QuestionEdit.tsx:5:1)
+
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |       0 |        0 |       0 |       0 |                   
+ src               |       0 |        0 |       0 |       0 |                   
+  App.tsx          |       0 |        0 |       0 |       0 | 8-16              
+ src/interfaces    |       0 |        0 |       0 |       0 |                   
+  question.ts      |       0 |        0 |       0 |       0 |                   
+  quiz.ts          |       0 |        0 |       0 |       0 |                   
+ src/quizzer       |       0 |        0 |       0 |       0 |                   
+  AddQuizModal.tsx |       0 |      100 |       0 |       0 | 4-53              
+  QuestionEdit.tsx |       0 |        0 |       0 |       0 | 8-253             
+  QuizCard.tsx     |       0 |        0 |       0 |       0 | 8-24              
+  QuizEdit.tsx     |       0 |        0 |       0 |       0 | 9-164             
+  QuizExpanded.tsx |       0 |        0 |       0 |       0 | 9-101             
+  QuizList.tsx     |       0 |        0 |       0 |       0 | 8-47              
+  QuizQuestion.tsx |       0 |        0 |       0 |       0 | 8-59              
+  QuizView.tsx     |       0 |        0 |       0 |       0 | 8-22              
+  Quizzer.tsx      |       0 |        0 |       0 |       0 | 10-45             
+-------------------|---------|----------|---------|---------|-------------------
+Test Suites: 2 failed, 2 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        4.691 s
+Ran all test suites.
