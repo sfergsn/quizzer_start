@@ -105,12 +105,12 @@ All files          |       0 |        0 |       0 |       0 |
   QuizEdit.tsx     |       0 |        0 |       0 |       0 | 9-164             
   QuizExpanded.tsx |       0 |        0 |       0 |       0 | 9-101             
   QuizList.tsx     |       0 |        0 |       0 |       0 | 9-48              
-  QuizQuestion.tsx |       0 |        0 |       0 |       0 | 8-59              
+  QuizQuestion.tsx |       0 |        0 |       0 |       0 | 8-62              
   QuizView.tsx     |       0 |        0 |       0 |       0 | 8-22              
   Quizzer.tsx      |       0 |        0 |       0 |       0 | 10-45             
 -------------------|---------|----------|---------|---------|-------------------
 Test Suites: 2 failed, 2 total
 Tests:       0 total
 Snapshots:   0 total
-Time:        3.828 s
+Time:        5.394 s
 Ran all test suites.
